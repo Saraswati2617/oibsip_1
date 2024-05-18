@@ -28,7 +28,7 @@ while(stop!=True):
     print("STARTING THE BMI CALCULATOR :)")
     weight=float(input("Please enter the weight in kilograms (kg):"))
     height=float(input("Please enter the height in meters (m):"))
-    BMI=weight/(math.sqrt(height))
+    BMI=weight/(height*height)
     bmi(BMI)
     again=input("Do you want to calculate again?Type 'yes' or 'no':")
     if again.lower()=='yes':
